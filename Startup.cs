@@ -27,6 +27,7 @@ namespace BC_IS413_Assignment5
             services.AddControllersWithViews();
             services.AddDbContext<AmazonBooksDBContext>(options =>
                {
+                   //Connection string. Defined in appsettings.json
                    options.UseSqlServer(Configuration["ConnectionStrings:AmazonBooksConnection"]);
                });
 
@@ -57,7 +58,7 @@ namespace BC_IS413_Assignment5
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            SeedData.EnsurePopulated(app);
+            SeedData.EnsurePopulated(app); //For seeding data from SeedData.cs
         }
     }
 }

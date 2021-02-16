@@ -1,7 +1,7 @@
 ﻿@{
-    ViewData["Title"] = "Amazon Books - Home Page";
+    ViewData["Title"] = "Home Page";
 }
-@model  IQueryable<Book>;
+@model  IQueryable<Book>; 
 
 <div class="container text-center">
     <h1 class="display-4">Welcome to AmazonBooks.com</h1>
@@ -11,9 +11,10 @@
 <div class="container">
     <table class="table table-hover table-striped">
         <thead class="thead-dark">
-            <tr><th scope="col">Column Number</th><th scope="col">Title</th><th scope="col">Author</th><th scope="col">Publisher</th><th scope="col">ISBN</th><th scope="col">Classification</th><th scope="col">Category</th></tr>
+            <tr><th scope="col">Column Number</th><th scope="col">Title</th><th scope="col">Author</th><th scope="col">Publisher</th><th scope="col">ISBN</th><th scope="col">Classification</th><th scope="col">Category</th><th scope="col">Price</th></tr>
         </thead>
         <tbody>
+            <!--For each loop, goes through each object in the model and displays there attributes in a table formatted below-->
             @foreach (var x in Model)
             {
                 <tr>
@@ -24,6 +25,7 @@
                     <td>@x.ISBN</td>
                     <td>@x.Classification</td>
                     <td>@x.Category</td>
+                    <td>$@x.Price</td>
                 </tr>
             }
             </tbody>

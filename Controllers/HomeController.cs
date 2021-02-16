@@ -18,17 +18,12 @@ namespace BC_IS413_Assignment5.Controllers
         public HomeController(ILogger<HomeController> logger, IAmazonBooksRepository repository)
         {
             _logger = logger;
-            _repository = repository;
+            _repository = repository; //Setting the IAmazonBooksRepository to the private attribute to send to Index
         }
 
         public IActionResult Index()
         {
-            return View(_repository.Books);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
+            return View(_repository.Books); //Passing the Books objects to Index view, ("Index", _repository.Books);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

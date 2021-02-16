@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BC_IS413_Assignment5.Migrations
 {
     [DbContext(typeof(AmazonBooksDBContext))]
-    [Migration("20210216031911_Initial")]
-    partial class Initial
+    [Migration("20210216155050_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,8 +43,8 @@ namespace BC_IS413_Assignment5.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("Publisher")
                         .IsRequired()
