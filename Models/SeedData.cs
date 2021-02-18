@@ -25,7 +25,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book #1
                     {
                         Title = "Les Miserables",
-                        Author = "Victor Hugo",
+                        AuthorFirst = "Victor",
+                        AuthorLast = "Hugo",
                         Publisher = "Signet",
                         ISBN = "978-0451419439",
                         Classification = "Fiction",
@@ -35,7 +36,9 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 2
                     {
                         Title = "Team of Rivals",
-                        Author = "Doris Kearns Goodwin",
+                        AuthorFirst = "Doris",
+                        AuthorMiddle = "Kearns",
+                        AuthorLast = "Goodwin",
                         Publisher = "Simon & Schuster",
                         ISBN = "978-0743270755",
                         Classification = "Non-Fiction",
@@ -45,7 +48,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 3
                     {
                         Title = "The Snowball",
-                        Author = "Alice Schroeder",
+                        AuthorFirst = "Alice",
+                        AuthorLast = "Schroeder",
                         Publisher = "Bantam",
                         ISBN = "978-0553384611",
                         Classification = "Non-Fiction",
@@ -55,7 +59,9 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 4
                     {
                         Title = "American Ulysses",
-                        Author = "Ronald C. White",
+                        AuthorFirst = "Ronald",
+                        AuthorMiddle = "C",
+                        AuthorLast = "White",
                         Publisher = "Random House",
                         ISBN = "978-0812981254",
                         Classification = "Non-Fiction",
@@ -65,7 +71,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 5
                     {
                         Title = "Unbroken",
-                        Author = "Laura Hillenbrand",
+                        AuthorFirst = "Laura",
+                        AuthorLast = "Hillenbrand",
                         Publisher = "Random House",
                         ISBN = "978-0812974492",
                         Classification = "Non-Fiction",
@@ -75,7 +82,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 6
                     {
                         Title = "The Great Train Robbery",
-                        Author = "Michael Crichton",
+                        AuthorFirst = "Michael",
+                        AuthorLast = "Crichton",
                         Publisher = "Vintage",
                         ISBN = "978-0804171281",
                         Classification = "Fiction",
@@ -85,7 +93,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 7
                     {
                         Title = "Deep Work",
-                        Author = "Cal Newport",
+                        AuthorFirst = "Cal",
+                        AuthorLast = "Newport",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455586691",
                         Classification = "Non-Fiction",
@@ -95,7 +104,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 8
                     {
                         Title = "It's Your Ship",
-                        Author = "Michael Abrashoff",
+                        AuthorFirst = "Michael",
+                        AuthorLast = "Abrashoff",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455523023",
                         Classification = "Non-Fiction",
@@ -105,7 +115,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 9
                     {
                         Title = "The Virgin Way",
-                        Author = "Richard Branson",
+                        AuthorFirst = "Richard",
+                        AuthorLast = "Branson",
                         Publisher = "Portfolio",
                         ISBN = "978-1591847984",
                         Classification = "Non-Fiction",
@@ -115,7 +126,8 @@ namespace BC_IS413_Assignment5.Models
                     new Book //Book 10
                     {
                         Title = "Sycamore Row",
-                        Author = "John Grisham",
+                        AuthorFirst = "John",
+                        AuthorLast = "Grisham",
                         Publisher = "Bantam",
                         ISBN = "978-0553393613",
                         Classification = "Fiction",

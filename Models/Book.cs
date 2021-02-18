@@ -11,19 +11,22 @@ namespace BC_IS413_Assignment5.Models
         [Key]
         public int BookId { get; set; }
         [Required]
-        public String Title { get; set; }
+        public string Title { get; set; }
         [Required]
-        public String Author { get; set; }
+        public string AuthorFirst { get; set; }
+        public string AuthorMiddle { get; set; }
         [Required]
-        public String Publisher { get; set; }
+        public string AuthorLast { get; set; }
+        [Required]
+        public string Publisher { get; set; }
         [Required]
         //Regular Expression to validate entered ISBN Numbers of either 10 or 13 characters, including section dashes
-        [RegularExpression("^(?:ISBN(?:-13)?:?\\ )?(?=[0-9]{13}$|(?=(?:[0-9]+[-\\ ]){4})[-\\ 0-9]{17}$)97[89][-\\ ]?[0-9]{1,5}[-\\ ]?[0-9]+[-\\ ]?[0-9]+[-\\ ]?[0-9]$", ErrorMessage = "Must be a valid ISBN number in format and 10 or 13 digits")]
-        public String ISBN { get; set; }
+        [RegularExpression("^[0-9]{3}-[0-9]{10}$", ErrorMessage = "Must be a valid ISBN number in format and 10 or 13 digits")]
+        public string ISBN { get; set; }
         [Required]
-        public String Classification { get; set; }
+        public string Classification { get; set; }
         [Required]
-        public String Category { get; set; }
+        public string Category { get; set; }
         [Required]
         [DataType(DataType.Currency, ErrorMessage = "Must be valid monetary value")]
         public double Price { get; set; }
