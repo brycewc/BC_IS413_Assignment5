@@ -20,7 +20,7 @@ namespace BC_IS413_Assignment5.Models
         [Required]
         public string Publisher { get; set; }
         [Required]
-        //Regular Expression to validate entered ISBN Numbers of either 10 or 13 characters, including section dashes
+        //Regular Expression to validate entered ISBN Numbers
         [RegularExpression("^[0-9]{3}-[0-9]{10}$", ErrorMessage = "Must be a valid ISBN number in format and 10 or 13 digits")]
         public string ISBN { get; set; }
         [Required]
